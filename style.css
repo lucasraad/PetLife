@@ -1,0 +1,34 @@
+
+*{ 
+    box-sizing: border-box;
+    margin: 0; /*margem grudada no canto do navegador(se trabalha no lado de fora)*/
+    padding: 0;/*grudado no top do navegador(se trablha no lado de dentro)*/
+    font-family: 'montserrat', sans-serif;
+}
+
+body {
+    color: #263138;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;/* serve para ativar align items e justify content*/
+    align-items: center; /* vai alinhar os itens na alinhar na vertical*/
+    justify-content: space-between; /*vai alinhar os itens na horizontal(space-between=espaço entre eles)*/
+    background-color: #FF9A6C;
+    padding-left:80px;
+    padding-right: 80px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding: 80px 24px;
+}
+
+header nav a {
+    color: white;
+    font-weight: 600; /*Usado para deixar em negrito*/
+    padding: 32px;
+    text-decoration: none; /* vai tirar a barrinha de baixo do texto*/
+}
