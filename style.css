@@ -23,7 +23,7 @@ header {
     padding-right: 80px;
     padding-top: 24px;
     padding-bottom: 24px;
-    padding: 80px 24px;
+   
 }
 
 header nav a {
@@ -31,4 +31,69 @@ header nav a {
     font-weight: 600; /*Usado para deixar em negrito*/
     padding: 32px;
     text-decoration: none; /* vai tirar a barrinha de baixo do texto*/
+}
+
+#inicio {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding:24px 80px 128px 20px ;
+    /*      top  direta baixo  esquerda*/
+    position: relative;
+}
+
+
+h1,
+h2 {
+    font-weight: 600;
+    font-size:30px ; /*tamanho da fonte*/
+    margin-bottom:30px ; /*espaçamento entre H1 e P na parte de baixo */
+}
+
+.paragrafo { /* "." é usado quando utilizar classes*/
+    line-height:150% ; /*altura de linha*/
+    margin-bottom:32px ;
+}
+
+.botao {
+    background-color: #ff725e;
+    border-radius: 8px; /*arredonda a borda*/
+    color: #FFFFFF;
+    /*vertical, horizontal*/
+    padding: 16px 32px ;
+    text-decoration: none; /*tira o sublinhado em baixo do texto*/
+}
+
+.botao-transparente {
+    background-color: transparent;
+    border-radius: 8px;
+    color: #ff725e;
+    padding: 16px 32px;
+    text-underline-offset: 4px; /*serve para dar uma espaçada no sublinhado*/
+
+}
+
+
+.absolute {
+    position: absolute; /*posiciona de forma absoluta na pagina*/
+    bottom: 0; /*para ficar no fundo da section*/
+    left: 0; /*ocupar o canto esquerdo da pagina*/
+    width: 100%; /*largura completa da pagina*/
+    z-index:-10 ; /*posiçao de profundidade*/
+    /*jogando um valor negativo, ele ira ficar atras dos elementos*/
+}
+
+#clinica {
+    display: flex;
+    align-items: center;
+    gap: 64x;
+    padding: 64px 80px; /*para espaçar da beirada da pagina*/
+    /*vetical e horizontal*/
+
+}
+
+#clinica li {
+    margin-bottom:16px ;
+    margin-left: 32px;
+
 }
