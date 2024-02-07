@@ -97,3 +97,106 @@ h2 {
     margin-left: 32px;
 
 }
+
+#farmacia {
+    padding: 64px 80;
+    text-align: center;
+}
+
+#farmacia img {
+    margin: 64px auto; /*auto vai calcular o valor necessario para que ela se mantenha centralizada**/
+}
+
+#farmacia .paragrafo {
+    max-width: 950px; /*largura maxima*/
+    margin: 0 auto; /*vai calcular automaticamente tanto a margem da esquerda quanto da direita*/
+
+}
+
+#duvidas { /* "#" usado para selecionar uma id*/
+    display: flex;
+    align-items: center;
+    padding: 64px 80px;
+    gap: 64px;
+}
+
+.duvida {
+    position: relative; /* qualquer elemento que tenha a posição absluta ira ficar limitado a ele*/
+}
+
+.duvida h3 {
+    border: 2px solid #ff725e; /*solid vai ser uma linha continua*/
+    border-radius: 8px;
+    cursor: pointer; /*curso do mouse ira inicar interação*/
+    padding: 24px;
+}
+
+.duvida img { /* "." usado para selecionar uma classe*/
+    position: absolute;
+    top: 32px;
+    right: 24px;
+}
+
+.duvida .paragrafo {
+    border-right: 1px solid #ff725e;
+    border-bottom: 1px solid #ff725e;
+    border-left: 1px solid #ff725e;
+    border-radius: 0 0 8px ;
+    margin-top: -8px;
+    padding: 0 24px;/*espaçamento*/
+    height: 0;
+    opacity: 0;/*transparencia do elemento*/
+    overflow: hidden;/* o texto transborda dos limites da caixinha, o "hidden"ira esconder o texto*/
+
+}
+
+.duvida.ativa .paragrafo {
+    height: fit-content;/*fazer o conteudo caber,a altura ira se ajusta para o conteudo caber */
+    opacity: 1;
+    padding: 24px;
+
+}
+
+footer {
+    background-color: rgba(255, 152, 108, 0.25);
+display:flex ;
+gap: 80px;
+padding: 64px 80px;
+}
+footer img, /*vai estilizar tanto a imagem quanto a classe titulo*/
+footer .titulo {
+font-weight: 600;
+display: block; /* estou usando para "block" para conseguir usar uma margem no "strong"*/
+margin-bottom: 24px;
+
+}
+
+footer nav a {
+    color: #263138;
+    display:block ;
+    margin-bottom: 16px;
+    text-decoration: none; /*usado para tirar o sublinado*/
+}
+
+footer p {
+    margin-bottom: 16px;
+    max-width: 350px;
+ }
+
+
+ footer p a {
+    color:#263138;
+    text-decoration: none;
+
+ }
+
+#copyright{
+    background-color: #263138;
+    color: #FFFFFF;
+    padding: 24px;
+    text-align: center;
+} 
+
+#copyright a {
+    color: #FF9A6C;
+}
