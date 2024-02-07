@@ -1,4 +1,5 @@
-var elementosDuvida = document.querySelectorAll('.duvida') //foi criado uma variavel para guarda esta informaçao para ser usada
+
+ var elementosDuvida = document.querySelectorAll('.duvida') //foi criado uma variavel para guarda esta informaçao para ser usada
 //primeira linha esta pegando todos os elementos
 
 elementosDuvida.forEach(function (duvida) { //segunda linha esta querendo executar uma função para cada elemento duvida
